@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+section {
+  background-color: black;
+  width: 100%;
+  padding: 1rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.image-box p {
+  color: white;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+
+.image-box,
+.people-icon {
+  position: relative;
+}
+
+.image-box .fa-bullhorn{
+  position: absolute;
+  color: white;
+  background-color: rgb(89, 89, 173);;
+  padding: .5rem;
+  border-radius: 50%;
+  top: 7%;
+  right: 5%;
+}
+
+.image-box .fa-microphone-slash{
+  position: absolute;
+  color: white;
+  top: 7%;
+  right: 5%;
+}
+
+.box-2 {
+  border: 3px solid rgb(89, 89, 173);
+  border-radius: 10px;
+}
+
+.second-div {
+  margin-top: 20px;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons-container,
+.icons-container-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.icons-container i {
+  background-color: rgb(56, 48, 48);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.icons-container .fa-phone {
+  background-color: red;
+}
+
+span {
+  background-color: rgb(56, 48, 48);
+  padding: 0.3rem;
+  border-radius: 50%;
+  font-size: 14px;
+  position: absolute;
+  top: -100%;
+  left: 55%;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .second-div {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .icons-container-2 {
+    margin-top: 20px;
+  }
+}
